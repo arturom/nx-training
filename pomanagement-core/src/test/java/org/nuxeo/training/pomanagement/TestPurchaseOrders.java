@@ -87,4 +87,11 @@ public class TestPurchaseOrders {
 
         assertEquals("Prestigious PO", doc.getTitle());
     }
+
+    @Test
+    public void shouldUpdateTitle() {
+        DocumentModel doc = session.createDocumentModel("/", " PO", "PurchaseOrder");
+
+        assertEquals("This is the new title", doc.getTitle());
+    }
 }
