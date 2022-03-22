@@ -20,5 +20,11 @@
       <artifactId>nuxeo-automation-test</artifactId>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>nuxeo-studio</groupId>
+      <artifactId>amejia-training</artifactId>
+      <version>master-SNAPSHOT</version>
+      <scope>test</scope>
+    </dependency>
   </dependencies>
 </project>
