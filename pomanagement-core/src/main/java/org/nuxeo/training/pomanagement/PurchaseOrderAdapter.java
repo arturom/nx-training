@@ -51,6 +51,24 @@ public class PurchaseOrderAdapter {
     return doc.getCurrentLifeCycleState();
   }
 
+  public void setProduct(String value) { doc.setPropertyValue("purchaseorder:product", value);}
+  public void setQuantity(int value) { doc.setPropertyValue("purchaseorder:quantity", value);}
+  public void setPrice(double value) { doc.setPropertyValue("purchaseorder:price", value);}
+
+  public String getProduct() { return (String) doc.getPropertyValue("purchaseorder:product" ); }
+
+  public void negotiate() {
+    doc.followTransition("to_negotiating");
+  }
+
+  public void toDraft() {
+    doc.followTransition("to_draft");
+  }
+
+  public void approve() {
+    doc.followTransition("to_approved");
+  }
+
   // Metadata get / set
   public String getTitle() {
     return doc.getTitle();
