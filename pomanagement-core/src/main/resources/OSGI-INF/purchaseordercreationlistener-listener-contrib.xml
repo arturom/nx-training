@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<component name="org.nuxeo.training.pomanagement.listener.purchaseordercreationlistener">
+
+  <extension target="org.nuxeo.ecm.core.event.EventServiceComponent" point="listener">
+    <listener name="purchaseordercreationlistener"
+      class="org.nuxeo.training.pomanagement.PurchaseOrderCreationListener">
+        <event>emptyDocumentModelCreated</event>
+    </listener>
+  </extension>
+
+</component>
