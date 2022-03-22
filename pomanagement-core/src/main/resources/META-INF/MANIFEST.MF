@@ -7,4 +7,5 @@ Bundle-Name: pomanagement-core
 Bundle-ManifestVersion: 2
 Bundle-SymbolicName: org.nuxeo.training.pomanagement.pomanagement-core;singleton=true
 Nuxeo-Component: OSGI-INF/checkuserpermission-operation-contrib.xml,
- OSGI-INF/addusertogroup-operation-contrib.xml
+ OSGI-INF/addusertogroup-operation-contrib.xml,
+ OSGI-INF/org.nuxeo.training.pomanagementpurchaseorder-adapter-contrib.xml
